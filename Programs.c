@@ -134,6 +134,7 @@ int main() {
 //check wheather a character is alphabet or not
 
 
+
 //Largest among 3 numbers
 
 #include <stdio.h>
@@ -181,8 +182,49 @@ int main() {
     
     return 0;
 }
-//vowels and consonents
+//vowels and consonants
 
+#include <stdio.h>
+
+int main() {
+    char v[11]={'a','e','i','o','u','A','E','I','O','U'};
+    char a;
+    printf("Enter a character:");
+    scanf("%c",&a);
+    for(int i=0;i<10;i++){
+        if(a==v[i]){
+            printf("The character is a vowel");
+            break;
+        }
+        else{
+            printf("The character is a consonant");
+            break;
+        }
+    }
+    return 0;
+}
 
 
 //check if a number is divisible by 5 and 11
+
+#include <stdio.h>
+
+int main() {
+    int num;
+    printf("Enter a number:");
+    scanf("%d",&num);
+    if(num%5==0 && num%11==0){
+        printf("The number is divisible by 5 and 11");
+    }
+    else if(num%5==0){
+        printf("The number is diviisible by 5 but not by 11");
+    }
+    else if(num%11==0){
+        printf("The number is diviisible by 11 but not by 5");
+    }
+    else{
+        printf("The number is not divisible by 5 and 11");
+    }
+    
+    return 0;
+}
