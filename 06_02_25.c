@@ -251,6 +251,24 @@ int main(){
     }
 }
 
+//print the digits of a number
+
+#include<stdio.h>
+int main(){
+    int num,d,r;
+    printf("Enter a number:");
+    scanf("%d",&num);
+    printf("Enter the number of digits in the number you entered:");
+    scanf("%d",&d);
+    for(int i=0;i<d;i++){
+        r=num%10;
+        printf("%d\t",r);
+        num/=10;
+    }
+}
+
+
+
 
 
 
