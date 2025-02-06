@@ -212,13 +212,71 @@ int main(){
         if(i%2==0){
             printf("%d\t",i);
             sum+=i;
-            i++;
         }
+        i++;
     }
     printf("\nThe sum of even numbers is %d",sum);
     return 0;
 }
 
 //sum of even numbers using do while loop
+
+#include<stdio.h>
+int main(){
+    int num;
+    int sum=0;
+    printf("Enter the number:");
+    scanf("%d",&num);
+    int i=1;
+    do{
+        if(i%2==0){
+            printf("%d\t",i);
+            sum+=i;
+        }
+        i++;
+    }while(i<=num);
+    printf("\nThe sum of even numbers is %d",sum);
+    return 0;
+}
+
+//Multiplication table
+
+#include<stdio.h>
+int main(){
+    int num;
+    printf("Enter a number:");
+    scanf("%d",&num);
+    for(int i=1;i<=10;i++){
+        printf("\n%d x %d = %d",i,num,i*num);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
